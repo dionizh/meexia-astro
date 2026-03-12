@@ -1,0 +1,87 @@
+---
+import { Image } from 'astro:assets';
+import games from '../assets/games.png';
+import moviecredits from '../assets/moviecredits.png';
+import scrapPlaceholder from '../assets/scrap-placeholder.png';
+import Layout from '../layouts/BlogPost.astro';
+---
+
+<Layout
+  title="VFX and Games"
+  description="Dioni's work in VFX and games."
+  pubDate={new Date('March 12 2026')}
+  heroImage={scrapPlaceholder}
+>
+  <h2 class="paper">Visual Effects (VFX)</h2>
+
+  <p class="paper">
+    I worked in VFX industry for 12 years in London and Sydney.
+    It started when I saw the early shots of Iron Man at the Lucasfilm/ILM studio
+    in Singapore (I was in the Lucas game division then) and ended more than 
+    a decade later when we finished Avengers: Endgame.
+    I realised then that this was also the end of my game. Thank you Marvel
+    for paying half of my mortgage.
+
+    <br />Working in VFX was a blast, I loved every bit of it with all its 
+    imperfections. But I knew it was time for me to do something else.
+    This page is more of a record for myself and occasional friends who are interested.
+    I sometimes forget which movies I've worked on, it was that many!
+  </p>
+
+  <h3 class="paper">Credits</h2>
+  <ol class="paper">
+    <li><a href="https://www.imdb.com/title/tt1219342/">Legend of the Guardians: The Owls of Ga'Hoole</a> (2010)</li>
+    <li><a href="https://www.imdb.com/title/tt1454468/">Gravity</a> (2013)</li>
+    <li><a href="https://www.imdb.com/title/tt1300854/">Iron Man 3</a> (2013)</li>
+    <li><a href="https://www.imdb.com/title/tt2015381/">Guardians of the Galaxy</a> (2014)</li>
+    <li><a href="https://www.imdb.com/title/tt1109624/">Paddington</a> (2014)</li>
+    <li><a href="https://www.imdb.com/title/tt3659388/">The Martian</a> (2015)</li>
+    <li><a href="https://www.imdb.com/title/tt4154756/">Avengers: Infinity War</a> (2018)</li>
+    <li><a href="https://www.imdb.com/title/tt0437086/">Alita: Battle Angel</a> (2019)</li>
+    <li><a href="https://www.imdb.com/title/tt6320628/">Spider-Man: Far from Home</a> (2019)</li>
+  </ol>
+
+  <Image src={moviecredits} alt="Movie credits" class="paper" style="display: block; margin: 0 auto;" />
+  <p class="text-center">See, I forgot to put Iron Man 3.</p>
+
+  <h3 class="paper">Notable ones (uncredited)</h2>
+
+  <ul class="paper">
+    <li><a href="https://www.imdb.com/title/tt1631867/">Edge of Tomorrow</a> (2014)</li>
+    <li><a href="https://www.imdb.com/title/tt1211837/">Doctor Strange</a> (2016)</li>
+    <li><a href="https://www.imdb.com/title/tt3183660">Fantastic Beasts and Where to Find Them</a> (2016)</li>
+    <li><a href="https://www.imdb.com/title/tt2771200/">Beauty and the Beast</a> (2017)</li>
+    <li><a href="https://www.imdb.com/title/tt3896198/">Guardians of the Galaxy Vol. 2</a> (2017)</li>
+    <li><a href="https://www.imdb.com/title/tt3501632/">Thor: Ragnarok</a> (2017)</li>
+    <li><a href="https://www.imdb.com/title/tt4468740/">Paddington 2</a> (2017)</li>
+    <li><a href="https://www.imdb.com/title/tt4575576/">Christopher Robin</a> (2018)</li>
+    <li><a href="https://www.imdb.com/title/tt4123430/">Fantastic Beasts: The Crimes of Grindelwald</a> (2018)</li>
+    <li><a href="https://www.imdb.com/title/tt2388771/">Mowgli</a> (2018)</li>
+    <li><a href="https://www.imdb.com/title/tt4154796/">Avengers: Endgame</a> (2019)</li>
+    <li><a href="https://www.imdb.com/title/tt5884052/">Pokémon Detective Pikachu</a> (2019)</li>
+    <li><a href="https://www.imdb.com/title/tt5607976/">His Dark Materials (Season 1)</a> (2019)</li>
+  </ul>
+
+  <h2 class="paper">Games</h2>
+
+  <p class="paper">
+  I worked for about 4 years in video games industry, in Melbourne and Singapore. 
+  The games I worked on:
+  </p>
+
+  <ul class="paper">
+    <li>Nicktoons Unite! (2005) — Nintendo GameCube and Sony PS2</li>
+    <li>Nicktoons: Battle for Volcano Island (2006) — Nintendo GameCube and Sony PS2</li>
+    <li>Star Wars: The Clone Wars - Jedi Alliance (2008) — Nintendo DS</li>
+  </ul>
+
+  <Image src={games} alt="Games" class="paper" style="display: block; margin: 0 auto;" />
+
+  <p class="paper">
+  Fun facts: I watched the entire three seasons of SpongeBob (plus some Danny Phantom
+  and The Fairly OddParents) when I worked on the Nicktoons games.
+  I also watched the entire Star Wars movies when I began working on the Clone
+  Wars game (no I never watched them before that). Because research.
+  </p>
+
+</Layout>

@@ -1,8 +1,10 @@
 ---
+import { Image } from 'astro:assets';
 import BaseHead from '../components/BaseHead.astro';
 import Footer from '../components/Footer.astro';
 import Header from '../components/Header.astro';
 import { SITE_DESCRIPTION, SITE_TITLE } from '../consts';
+import whiterabbit from '../assets/whiterabbit.png';
 ---
 
 <!doctype html>
@@ -15,21 +17,35 @@ import { SITE_DESCRIPTION, SITE_TITLE } from '../consts';
 
     <main class="container padding-large">
 
-      <h1 class="text-center paper">Welcome to PaperAstro</h1>
+      <h1 class="text-center paper">Dioni Zhong</h1>
 
       <p class="paper">
-        PaperAstro is a lightweight, professional starter template built with Astro and styled
-        entirely using PaperCSS. It provides a clean, sketch‑inspired aesthetic while maintaining
-        strong performance, clarity, and simplicity.
+        Storyteller trapped in a programmer's body.
+        <br />Worked on movies and video games in my past lives. Yes, you know the movies. Maybe not the games.
+        <br />Two degrees — Software Engineering and English Literature + Creative Writing.
+        <br />One funded my entire life. One did not. Guess which is which.
+        <br />Lived in 7 different countries, 9 cities. Perpetual chronic identity crisis is part of the identity.
+        <br />Stumbled upon a home in a small city in the southwest corner of China in 2023.
       </p>
 
       <p class="paper">
-        This template is designed for developers who want a minimal, well‑structured foundation
-        for blogs, documentation sites, or small content‑driven projects. PaperAstro keeps the
-        design approachable and distinctive without adding unnecessary complexity.
+        [2026.03.12] I "retired" from coding for the past few years. Recently checking what's this whole AI thing about,
+        only to realise that coding is a bit like riding a bike. The body remembers. And boy has it become 
+        a lot more fun since I left! Feel like a superhero who discovered a whole new superpower
+        when coming out of her retirement. Like Rambo. Or Wonder Woman. Like running up the mountain with
+        a pair of Chinese robot legs.
       </p>
 
-      <h2 class="paper">Features</h2>
+      <h2 class="paper">Find me on</h2>
+
+      <ul class="paper">
+        <li><a href="https://substack.com/@thenoodlejar">Substack: the Noodle Jar</a> for my writing</li>
+        <li><a href="https://www.instagram.com/wheres.dioni/">Instagram</a> for occasional pics</li>
+        <li><a href="https://www.linkedin.com/in/dionizhong/">LinkedIn</a> for my resume</li> 
+        <li><a href="https://github.com/dionizh">GitHub</a> for my code</li> 
+      </ul>
+
+      <!--h2 class="paper">Features</h2>
 
       <ul class="paper">
         <li>Clean, minimal layout powered by Astro</li>
@@ -38,9 +54,9 @@ import { SITE_DESCRIPTION, SITE_TITLE } from '../consts';
         <li>RSS and Sitemap integrations included</li>
         <li>Image optimization via Sharp</li>
         <li>Built‑in form handling through Fabform.io</li>
-      </ul>
+      </ul-->
 
-      <h2 class="paper">Getting Started</h2>
+      <!--h2 class="paper">Getting Started</h2>
 
       <p class="paper">
         To begin customizing this template, edit the files inside the <code>src</code> directory.
@@ -53,18 +69,17 @@ import { SITE_DESCRIPTION, SITE_TITLE } from '../consts';
         <li>Add new routes inside <code>src/pages/</code></li>
         <li>Update global settings in <code>src/consts.ts</code></li>
         <li>Extend layouts or components as needed</li>
-      </ul>
-
-      <h2 class="paper">Resources</h2>
-
-      <ul class="paper">
-        <li><a href="https://docs.astro.build/">Astro Documentation</a></li>
-        <li><a href="https://www.getpapercss.com/">PaperCSS Documentation</a></li>
-        <li><a href="https://fabform.io">Fabform.io</a> for form handling</li>
-      </ul>
+      </ul-->
 
       <p class="paper text-center">
-        PaperAstro provides a focused, reliable starting point for your next project.
+        <Image src={whiterabbit} alt="White Rabbit" width={481} height={494} class="paper" style="display: block; margin: 0 auto;" />
+      </p>
+
+      <p class="paper text-center">
+        Fun fact: meexia (short for meecharixia) is a name of a character I 
+        created when I was 20yo. My drawing of her gave me a scholarship to do
+        a game dev program in Canada, and paved the way for the rest of my career in games 
+        and VFX for movies.
       </p>
 
     </main>
