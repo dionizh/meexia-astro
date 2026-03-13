@@ -1,0 +1,33 @@
+---
+import { Image } from 'astro:assets';
+import scrapPlaceholder from '../assets/scrap-placeholder.png';
+import codeforlife from '../assets/codeforlife.png';
+import Layout from '../layouts/BlogPost.astro';
+---
+
+<Layout
+  title="Web Dev and EdTech"
+  description="Dioni's work in web development and education technology."
+  pubDate={new Date('March 13 2026')}
+  heroImage={scrapPlaceholder}
+>
+  <p class="paper">
+    I can't show my web projects in VFX (top secrets stuff!) but I can
+    show <a href="https://www.codeforlife.education/">Code for Life</a>, 
+    the web project that I worked on as a 
+    Senior Software Engineer at Ocado. It provides
+    free games and resources to teach coding to kids in schools. Everything
+    is open-source too on GitHub and they always welcome contributions from the community!
+  </p>
+
+  <Image src={codeforlife} alt="Code for Life" class="paper" style="display: block; margin: 0 auto;" />
+  <p class="text-center">The two boys on the right are my nephews. :)</p>
+
+  <h2 class="paper">Featured on</h2>
+  <ul class="paper">
+    <li><a href="https://docs.codeforlife.education/community-resource-hub/careers-in-technology">Careers in technology</a> — Code for Life Community</li>
+    <li><a href="https://docs.codeforlife.education/newsletters/summer-2022">Bett Show 2022</a> — Code for Life Community</li> 
+    <li><a href="https://hrhackathon-remote-work-hr.devpost.com/project-gallery">HR Hackathon</a> — Spontea Coffee (Winner)</li>
+  </ul>
+
+</Layout>
